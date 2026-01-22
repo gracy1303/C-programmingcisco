@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char m[15];
+    scanf("%s", m);
+    if (strlen(m) == 10)
+        printf("Valid Mobile Number");
+    else
+        printf("Invalid Mobile Number");
+    return 0;
+}
