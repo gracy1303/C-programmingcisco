@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+    int n, i, p, count = 0;
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++) {
+        scanf("%d", &p);
+        if (p == 1) count++;
+    }
+    printf("Present = %d", count);
+    return 0;
+}
