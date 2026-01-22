@@ -1,0 +1,16 @@
+#include <stdio.h>
+struct item {
+    int id;
+    int qty;
+};
+int main() {
+    struct item i[3];
+    int j, key;
+    for (j = 0; j < 3; j++)
+        scanf("%d %d", &i[j].id, &i[j].qty);
+    scanf("%d", &key);
+    for (j = 0; j < 3; j++)
+        if (i[j].id == key)
+            printf("ID=%d Qty=%d", i[j].id, i[j].qty);
+    return 0;
+}
