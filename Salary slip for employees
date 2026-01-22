@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main() {
+    int empid;
+    float salary;
+    scanf("%d %f", &empid, &salary);
+    printf("Emp ID: %d\nSalary: %.2f", empid, salary);
+    return 0;
+}
