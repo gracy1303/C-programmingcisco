@@ -1,0 +1,10 @@
+#include <stdio.h>
+struct marks {
+    int m1, m2, m3;
+};
+int main() {
+    struct marks m;
+    scanf("%d %d %d", &m.m1, &m.m2, &m.m3);
+    printf("Total = %d", m.m1 + m.m2 + m.m3);
+    return 0;
+}
