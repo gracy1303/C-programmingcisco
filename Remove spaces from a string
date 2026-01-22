@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    char s[50], r[50];
+    int i, j = 0;
+    gets(s);
+    for (i = 0; s[i]; i++)
+        if (s[i] != ' ')
+            r[j++] = s[i];
+    r[j] = '\0';
+    puts(r);
+    return 0;
+}
