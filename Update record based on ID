@@ -1,0 +1,18 @@
+#include <stdio.h>
+struct emp {
+    int id;
+    float salary;
+};
+int main() {
+    struct emp e[3];
+    int i, key;
+    for (i = 0; i < 3; i++)
+        scanf("%d %f", &e[i].id, &e[i].salary);
+    scanf("%d", &key);
+    for (i = 0; i < 3; i++)
+        if (e[i].id == key)
+            scanf("%f", &e[i].salary);
+    for (i = 0; i < 3; i++)
+        printf("%d %.2f\n", e[i].id, e[i].salary);
+    return 0;
+}
