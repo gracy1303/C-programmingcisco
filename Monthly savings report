@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+    int income, expense;
+    scanf("%d %d", &income, &expense);
+    printf("Savings = %d", income - expense);
+    return 0;
+}
