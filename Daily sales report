@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main() {
+    int i, sales[7], total = 0;
+    for (i = 0; i < 7; i++) {
+        scanf("%d", &sales[i]);
+        total += sales[i];
+    }
+    printf("Total Sales=%d", total);
+    return 0;
+}
