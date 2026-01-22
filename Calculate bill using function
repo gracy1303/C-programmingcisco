@@ -1,0 +1,10 @@
+#include <stdio.h>
+int bill(int q, int p) {
+    return q * p;
+}
+int main() {
+    int qty, price;
+    scanf("%d %d", &qty, &price);
+    printf("Bill = %d", bill(qty, price));
+    return 0;
+}
